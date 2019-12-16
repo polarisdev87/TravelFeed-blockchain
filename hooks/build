@@ -1,0 +1,2 @@
+#!/bin/bash
+docker build -t $IMAGE_NAME --build-arg MAPBOX_TOKEN=$MAPBOX_TOKEN --build-arg GMAPS_API_KEY=$GMAPS_API_KEY --build-arg RECAPTCHA_SITE_KEY=$RECAPTCHA_SITE_KEY --build-arg ROOTURL=$ROOTURL --build-arg GRAPHQL_URL=$GRAPHQL_URL --build-arg WEB_PUSH_PUB=$WEB_PUSH_PUB --build-arg STEEM_API=$STEEM_API .

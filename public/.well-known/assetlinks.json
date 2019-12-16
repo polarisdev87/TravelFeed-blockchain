@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.travelfeed.pwa",
+      "sha256_cert_fingerprints": [
+        "CF:9C:6A:4B:D7:32:49:93:8C:54:24:38:ED:FA:DC:CD:F5:A4:67:50:CA:A3:CB:5C:1E:44:62:EB:17:12:E0:F4"
+      ]
+    }
+  }
+]

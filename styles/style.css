@@ -1,0 +1,353 @@
+/* post editor */
+#editorjs-container .codex-editor__redactor {
+  padding-bottom: 300px !important;
+}
+
+/* comment editor */
+.codex-editor__redactor {
+  padding-bottom: 100px !important;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1240px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  /* Bootstrap sm */
+  .pull-right {
+    position: relative;
+    width: 50%;
+    float: right;
+    padding: 5px 0 5px 20px;
+  }
+  .pull-left {
+    position: relative;
+    max-width: 50%;
+    float: left;
+    padding: 5px 20px 5px 0;
+  }
+  .pull-left figure,
+  .pull-right figure {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}
+
+.mapboxgl-popup-content {
+  padding: 0 !important;
+}
+.mapboxgl-popup-close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+/* Editor inline menu */
+.duDjGM {
+  padding-bottom: 14px !important;
+}
+/* Editor textfield overwrites */
+.lafGOK {
+  background: none !important;
+  color: inherit !important;
+}
+
+/* Bring editor notification to front */
+.cdx-notifies {
+  z-index: 9999 !important;
+}
+
+figcaption {
+  margin-left: 24px;
+  margin-right: 24px;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+/* offset the navbar */
+.anchor {
+  display: block;
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
+
+/* Image lazy loading fade effect */
+.lazy {
+  transition: opacity 0.3s;
+  opacity: 0.8;
+}
+.lazy.loaded {
+  opacity: 1;
+}
+
+.lazyImage img {
+  object-fit: cover;
+}
+
+.fullheight {
+  position: absolute;
+  /* https://stackoverflow.com/questions/15021573/get-div-to-take-up-100-body-height-minus-fixed-height-header-and-footer */
+  height: -moz-calc(100% - 65px); /* Firefox */
+  height: -webkit-calc(100% - 65px); /* Chrome, Safari */
+  height: calc(100% - 65px); /* IE9+ and future browsers */
+}
+
+.text-decoration-underline {
+  text-decoration: underline;
+}
+
+.text-mutedlight {
+  color: #9e9e9e;
+}
+
+@media only screen and (max-width: 767px) {
+  .fullheight {
+    position: absolute;
+    height: -moz-calc(100% - 55px); /* Firefox */
+    height: -webkit-calc(100% - 55px); /* Chrome, Safari */
+    height: calc(100% - 55px); /* IE9+ and future browsers */
+  }
+}
+
+body {
+  word-wrap: break-word;
+}
+
+a,
+a:hover {
+  text-decoration: none !important;
+  color: inherit;
+}
+.postCardContent {
+  overflow: hidden;
+  padding: 16px;
+}
+sup {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9em;
+}
+.postcontent a,
+.ablue {
+  color: #1e88e5 !important;
+}
+.postcontent a:hover,
+.hoverline:hover {
+  text-decoration: underline !important;
+  color: #1e88e5;
+}
+.postcontent figure {
+  margin-left: -24px;
+  margin-right: -24px;
+}
+.postcontent .lazy {
+  width: 100%;
+}
+.postcontent .loaded {
+  width: auto !important;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fullwidth {
+  width: calc(100% + 48px) !important;
+  padding: 20px 0;
+  margin-left: -24px;
+  margin-right: -24px;
+}
+.postcontent table {
+  width: 100%;
+}
+.postcontent table figure {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.postcontent iframe {
+  width: calc(100% + 48px);
+  margin-left: -24px;
+  margin-right: -24px;
+  padding: 20px 0;
+}
+
+#editorjs-container,
+.custom-html-style,
+.custom-html-style p,
+.rc-md-editor .editor-container .sec-md .input {
+  font-size: 1.15rem !important;
+  font-weight: 400;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Editor js */
+#editorjs-container img,
+#editorjs-container iframe,
+.html-wrap iframe, /* Markdown editor */
+.editorjs-container img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-tool__caption {
+  text-align: center;
+  display: inline-block;
+}
+
+/* Markdown editor */
+.custom-html-style .videoWrapper iframe {
+  height: 250px !important;
+}
+
+.postcontent,
+.custom-html-style ol,
+.custom-html-style ul {
+  font-size: 1.15rem !important;
+  font-weight: 400;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.46429em;
+}
+
+.postcontent h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.20588em;
+}
+.postcontent h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.13333em;
+  margin-left: -0.02em;
+}
+.postcontent h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.30357em;
+  margin-left: -0.02em;
+  letter-spacing: -0.02em;
+}
+.postcontent h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.33;
+  letter-spacing: 0em;
+}
+.postcontent h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+}
+.postcontent h6 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+}
+.postcontent pre code {
+  white-space: pre-line;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+  color: #666;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  width: 100%;
+  word-spacing: 100%;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
+.postcontent blockquote {
+  font-family: medium-content-slab-serif-font, Georgia, Cambria, Times, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.3rem;
+  line-height: 1.48;
+  letter-spacing: -0.012em;
+  padding: 0 50px 0 50px;
+  quotes: '\201c''\201d';
+}
+.postcontent blockquote:before {
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.postcontent table {
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+  display: table;
+  border: 1px;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: grey;
+}
+.postcontent td {
+  padding: 0.5rem 0.625rem 0.625rem;
+}
+.postcontent tr {
+  background-color: #fcfcfcb9;
+}
+.postcontent tr:nth-child(even) {
+  background-color: #f4f4f494;
+}
+
+blockquote > center {
+  margin: 0 -50px 0 -50px !important;
+}
+
+a .username {
+  color: black;
+}
+.cpointer {
+  cursor: pointer;
+}
+button:focus,
+button:active,
+button:hover,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+}
+/* editor */
+.mce-content-body {
+  outline: 0px !important;
+  -webkit-appearance: none;
+}
+.posteditor {
+  min-height: 350px;
+}
+.inputtitle {
+  font-size: 40px !important;
+}
+/* carousel */
+.carousel-inner .carousel-item {
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  position: absolute;
+  transition: opacity 0.5s ease-in-out;
+}
+.carousel-inner .carousel-item:first-of-type {
+  position: relative;
+}
+.carousel-inner .active {
+  opacity: 1;
+  z-index: 100;
+}
